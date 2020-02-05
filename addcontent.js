@@ -4,11 +4,11 @@ function greeting() {
     var hourNow =prompt("enter your greeting");
     var greeting;
     // processing 
-    if (hourNow > 0 && hourNow < 12 ){
+    if (hourNow >= 0 && hourNow <= 12 ){
         greeting ='good morning';
-    } else if(hourNow > 12 && hourNow < 18){
+    } else if(hourNow >= 12 && hourNow <= 18){
         greeting ='good afternoon';
-    }else if(hourNow > 18 && hourNow <=24){
+    }else if(hourNow >= 18 && hourNow <=24){
         greeting = 'good evening ';
     
     }else{
