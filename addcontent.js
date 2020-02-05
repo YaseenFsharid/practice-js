@@ -20,3 +20,24 @@ function greeting() {
 
 var greeting = greeting();
 document.write('<h3>'+ greeting + '</h3>')
+
+var showOrders = function () {
+var userOrder;
+var orderImage="";
+while (userOrder !== "hotel" && userOrder !== "house") {
+    userOrder = prompt("please enter house or hotel");
+}    
+var numberOFimage =prompt("how many image do you want");
+for (var i=0; i < numberOFimage; i++) {
+    
+    
+    if (userOrder === "hotel") {
+        orderImage = orderImage +'<image src = "images/hotel.png">';
+    }else if(userOrder === "house"){
+        orderImage = orderImage +'<img src = "images/house.png">';
+    }
+}
+
+return orderImage;
+}
+document.write('<p>'+showOrders()+'</p>');
