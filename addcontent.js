@@ -23,18 +23,18 @@ document.write('<h3>'+ greeting + '</h3>')
 
 var showOrders = function () {
 var userOrder;
-var orderImage="";
-while (userOrder !== "hotel" && userOrder !== "house") {
-    userOrder = prompt("please enter house or hotel");
+var orderImage=" ";
+while (userOrder != "samsung j7" && userOrder != "iphone pro") {
+    userOrder = prompt("please choose samsung j7 or IPone pro");
 }    
 var numberOFimage =prompt("how many image do you want");
 for (var i=0; i < numberOFimage; i++) {
     
     
-    if (userOrder === "hotel") {
-        orderImage = orderImage +'<image src = "images/hotel.png">';
-    }else if(userOrder === "house"){
-        orderImage = orderImage +'<img src = "images/house.png">';
+    if (userOrder === "samsung j7") {
+        orderImage = orderImage +'<image src = "images/samsung.jpg">';
+    }else if(userOrder === "iphone pro"){
+        orderImage = orderImage +'<img src = "images/ipone.png">';
     }
 }
 
